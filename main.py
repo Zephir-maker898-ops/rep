@@ -1,6 +1,5 @@
 import telebot
 from telebot import types
-
 import config
 import random
 
