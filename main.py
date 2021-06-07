@@ -1,7 +1,7 @@
-import test_sender
-import test_timer
 from multiprocessing import Process
 from datetime import datetime
+import test_sender
+import test_timer
 
 
 if __name__ == '__main__':
