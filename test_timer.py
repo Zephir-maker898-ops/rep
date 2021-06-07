@@ -13,7 +13,7 @@ def main():
         bot.send_message(config.id_group, random.choice(config.array))
 
     sched = AsyncIOScheduler()
-    sched.add_job(send_timer, 'cron', minute='*', jitter=0.5)
+    sched.add_job(send_timer, 'cron', minute='*', jitter=5400)
     sched.start()
     asyncio.get_event_loop().run_forever()
 
