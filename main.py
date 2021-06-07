@@ -2,7 +2,6 @@ import random
 from telebot import types
 from multiprocessing import Process
 from datetime import datetime
-import test_sender
 import test_timer
 import time
 import telebot
