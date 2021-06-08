@@ -15,7 +15,7 @@ if __name__ == '__main__':
         markup = types.ReplyKeyboardMarkup(True)
         markup.add('порадовать себя)')
         if message.text == 'порадовать себя)':
-            bot.send_message(message.chat.id, random.choice(config.array), reply_markup=markup)
+            bot.send_message(message.chat.id, random.choice(config.array_text)+random.choice(config.array_smiles), reply_markup=markup)
             print("pressed")
     # а теперь запускаем проверку в отдельном потоке
 

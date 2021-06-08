@@ -13,7 +13,7 @@ async def send_timer():
     tm = int(datetime.now().strftime('%H'))
     if tm > 6 or tm == 0:
         print(tm)
-        bot.send_message(config.id_group, random.choice(config.array))
+        bot.send_message(config.id_group, random.choice(config.array_text)+random.choice(config.array_smiles))
         print('timer')
 
 
