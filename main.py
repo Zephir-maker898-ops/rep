@@ -1,7 +1,6 @@
 import random
 from telebot import types
 from multiprocessing import Process
-from datetime import datetime
 import test_timer
 import time
 import telebot
@@ -17,13 +16,12 @@ if __name__ == '__main__':
         markup.add('порадовать себя)')
         if message.text == 'порадовать себя)':
             bot.send_message(message.chat.id, random.choice(config.array), reply_markup=markup)
-            print("press")
+            print("pressed")
     # а теперь запускаем проверку в отдельном потоке
 
-    tm = int(datetime.now().strftime(' %H'))
-    if tm != 1 and tm != 2 and tm != 3 and tm != 4 and tm != 5 and tm != 6:
-        p2 = Process(target=test_timer.main)
-        p2.start()
+    p2 = Process(target=test_timer.main, args=())
+    p2.start()
+
     while True:
         try:
             bot.infinity_polling()
