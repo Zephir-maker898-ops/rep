@@ -5,7 +5,6 @@ import config
 import random
 from datetime import datetime
 
-
 bot = telebot.TeleBot(config.token)
 
 
@@ -13,7 +12,9 @@ async def send_timer():
     tm = int(datetime.now().strftime('%H'))
     if 3 < tm < 22:
         print(tm)
-        bot.send_message(config.id_group, random.choice(config.array_text)+random.choice(config.array_smiles))
+        bot.send_message(config.id_group, random.choice(config.array_text)
+                         + random.choice(config.array_smiles)
+                         + random.choice(config.array_smiles))
         print('timer')
 
 
