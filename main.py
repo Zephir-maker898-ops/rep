@@ -6,7 +6,7 @@ import time
 import telebot
 import config
 
-bot = telebot.TeleBot(config.token)
+bot = telebot.TeleBot(config.toke)
 
 if __name__ == '__main__':
 

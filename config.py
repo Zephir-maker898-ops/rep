@@ -1,4 +1,4 @@
-token = '1885600223:AAG9Be2lb9uX3-FzkB2xuVBoyEh178FJ4HM'
+toke = '1885600223:AAG9Be2lb9uX3-FzkB2xuVBoyEh178FJ4HM'
 
 id_group = -533651417
 
